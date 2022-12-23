@@ -1,0 +1,93 @@
+303192
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'snp'
+
+[reply]
+           data_type
+0            integer
+1  character varying
+2            integer
+3  character varying
+4  character varying
+5  character varying
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'gene'
+
+[reply]
+           data_type
+0            integer
+1            integer
+2  character varying
+3  character varying
+4  character varying
+5  character varying
+6  character varying
+7  character varying
+8               date
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'disease'
+
+[reply]
+           data_type
+0            integer
+1  character varying
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'snp_gene'
+           data_type
+0            integer
+1  character varying
+
+[reply]
+[BioJoin.ProgrammingError]: syntax error at or near "data_type"
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'snp_gene'
+
+
+[reply]
+  data_type
+0   integer
+1   integer
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'gene_disease'
+
+  data_type
+0   integer
+1   integer
+
+[reply]
+[BioJoin.ProgrammingError]: syntax error at or near "data_type"
+
+[query]
+SELECT DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE 
+     TABLE_NAME   = 'gene_disease'
+
+[reply]
+  data_type
+0   integer
+1   integer
